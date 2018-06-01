@@ -10,8 +10,8 @@
         <property name="beginningDelimiter" value="`"/>
         <property name="endingDelimiter" value="`"/>
 
-        <plugin type="tk.mybatis.mapper.generator.MapperPlugin">
-            <property name="mappers" value="tk.mybatis.springboot.util.MyMapper"/>
+        <plugin type="com.mybatis.mapper.generator.MapperPlugin">
+            <property name="mappers" value="com.mybatis.springboot.util.MyMapper"/>
         </plugin>
 
         <jdbcConnection driverClass="${spring.datasource.driver-class-name}"
@@ -20,11 +20,11 @@
                         password="${spring.datasource.password}">
         </jdbcConnection>
 
-        <javaModelGenerator targetPackage="tk.mybatis.springboot.model" targetProject="src/main/java"/>
+        <javaModelGenerator targetPackage="com.mybatis.springboot.model" targetProject="src/main/java"/>
 
         <sqlMapGenerator targetPackage="mapper" targetProject="src/main/resources"/>
 
-        <javaClientGenerator targetPackage="tk.mybatis.springboot.mapper" targetProject="src/main/java"
+        <javaClientGenerator targetPackage="com.mybatis.springboot.mapper" targetProject="src/main/java"
                              type="XMLMAPPER"/>
 
         <table tableName="country">

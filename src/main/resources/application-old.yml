@@ -4,7 +4,7 @@ server:
 
 logging:
     level:
-        tk.mybatis: TRACE
+        com.mybatis: TRACE
 
 druid:
     url: jdbc:mysql://192.168.16.137:3306/test
@@ -26,12 +26,12 @@ spring:
 
 
 mybatis:
-    type-aliases-package: tk.mybatis.springboot.model
+    type-aliases-package: com.mybatis.springboot.model
     mapper-locations: classpath:mapper/*.xml
 
 mapper:
     mappers:
-        - tk.mybatis.springboot.util.MyMapper
+        - MyMapper
     not-empty: false
     identity: MYSQL
 

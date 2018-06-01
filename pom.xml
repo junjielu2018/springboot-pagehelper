@@ -82,7 +82,7 @@
 
         <!--mapper-->
         <dependency>
-            <groupId>tk.mybatis</groupId>
+            <groupId>com.mybatis</groupId>
             <artifactId>mapper-spring-boot-starter</artifactId>
             <version>${mapper.starter.version}</version>
         </dependency>
@@ -142,7 +142,7 @@
                         <version>${mysql.version}</version>
                     </dependency>
                     <dependency>
-                        <groupId>tk.mybatis</groupId>
+                        <groupId>com.mybatis</groupId>
                         <artifactId>mapper-generator</artifactId>
                         <version>1.0.0</version>
                     </dependency>
